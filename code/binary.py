@@ -11,7 +11,8 @@ from keras.layers import Dense, Dropout, Flatten
 from sklearn.model_selection import StratifiedKFold
 import sklearn.metrics as skm
 
-file_url = 'C:\Users\Mika\Documents\GitHub\Proyecto\dataset'
+#file_url = 'C:\Users\Mika\Documents\GitHub\Proyecto\dataset'
+file_url = 'C:\\Users\\Mika\\Documents\\GitHub\\Proyecto\\dataset\\dataset.zip'
 
 def windows(data, window_size):
   start = 0
@@ -137,3 +138,4 @@ with open(csv_filename, 'w', newline='') as csv_file:
 
   for i in range(len(accuracy_scores)):
     csv_writer.writerow([accuracy_scores[i], precision_scores[i], recall_scores[i], f1_scores[i]])
+print("hola")
