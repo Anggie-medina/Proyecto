@@ -11,6 +11,8 @@ from keras.layers import Dense, Dropout, Flatten
 from sklearn.model_selection import StratifiedKFold
 import sklearn.metrics as skm
 
+file_url = 'C:\Users\Mika\Documents\GitHub\Proyecto\dataset'
+
 def windows(data, window_size):
   start = 0
   while start < len(data):
@@ -89,7 +91,7 @@ def train_and_evaluate_model(model, xtrain, ytrain, xval, yval):
 seed = 123
 np.random.seed(seed)  # for reproducibility
 
-file_url = 'E:\\mosquitos\\train'
+
 
 bands = 60
 frames = 40
